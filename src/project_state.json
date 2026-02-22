@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a simple responsive static HTML landing page for \"Jai Bhavani Tyres\" (Yadgiri – Chittapur Road) with product cards (Bike Tyres, Car Tyres) and WhatsApp order buttons.",
+  "architectural_notes": [
+    "Static single-page HTML with embedded CSS; responsive via viewport meta tag"
+  ],
+  "known_issues": [
+    "Broken HTML attribute quoting in Car Tyres WhatsApp link: missing closing quote in href=\"https://wa.me/919242253234>\"",
+    "User reports the CTA link is not opening (likely related to the WhatsApp deep link / href formatting)."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-single-page-responsive-landing-page-ui-in-the-react-frontend-that-mirrors-the-provided-html-content-a-header-with-the-business-name-jai-bhavani-tyres-and-location-yadgiri-chittapur-road-followed-by-two-product-cards-bike-tyres-and-car-tyres-showing-a-short-description-a-price-starts-line-and-an-order-on-whatsapp-call-to-action-button-per-card",
+      "title": "Implement a single-page responsive landing page UI in the React frontend that mirrors the provided HTML content: a header with the business name “Jai Bhavani Tyres” and location “Yadgiri – Chittapur Road”, followed by two product cards (Bike Tyres and Car Tyres) showing a short description, a “Price starts …” line, and an “Order on WhatsApp” call-to-action button per card.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-whatsapp-deep-links-exactly-as-provided-for-each-card-and-fix-the-broken-html-attribute-quoting-from-the-provided-snippet-so-the-car-tyres-cta-link-is-valid-and-clickable-bike-tyres-https-wa-me-91xxxxxxxxxx-car-tyres-https-wa-me-919242253234",
+      "title": "Use the WhatsApp deep links exactly as provided for each card, and fix the broken HTML attribute quoting from the provided snippet so the Car Tyres CTA link is valid and clickable (Bike Tyres: https://wa.me/91XXXXXXXXXX, Car Tyres: https://wa.me/919242253234).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-using-tailwind-styling-no-inline-css-that-is-consistent-across-the-page-inspired-by-an-auto-service-tyre-shop-feel-use-a-warm-accent-color-e-g-amber-yellow-for-the-header-and-a-green-accent-for-whatsapp-buttons-while-keeping-typography-and-spacing-clean-and-modern-do-not-use-a-blue-purple-primary-theme",
+      "title": "Apply a coherent visual theme using Tailwind styling (no inline CSS) that is consistent across the page, inspired by an auto-service/tyre-shop feel. Use a warm accent color (e.g., amber/yellow) for the header and a green accent for WhatsApp buttons, while keeping typography and spacing clean and modern. Do not use a blue/purple primary theme.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-product-card-order-on-whatsapp-call-to-action-so-the-whatsapp-link-reliably-opens-when-clicked-ensure-the-clickable-element-is-a-real-anchor-a-with-the-whatsapp-url-in-its-href-not-a-nested-overlaid-element-that-can-block-navigation-and-keep-the-existing-whatsapp-deep-links-exactly-as-they-are-in-the-app-bike-tyres-https-wa-me-91xxxxxxxxxx-car-tyres-https-wa-me-919242253234",
+      "title": "Fix the product card “Order on WhatsApp” call-to-action so the WhatsApp link reliably opens when clicked. Ensure the clickable element is a real anchor (<a>) with the WhatsApp URL in its href (not a nested/overlaid element that can block navigation), and keep the existing WhatsApp deep links exactly as they are in the app (Bike Tyres: https://wa.me/91XXXXXXXXXX, Car Tyres: https://wa.me/919242253234).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Landing page with header (shop name + location) and product cards for Bike Tyres and Car Tyres",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "WhatsApp \"Order on WhatsApp\" CTA buttons for each product card",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Jai Bhavani Tyres",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

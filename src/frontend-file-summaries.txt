@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Main landing page component displaying Jai Bhavani Tyres header, two product cards (Bike Tyres and Car Tyres) with reliable WhatsApp order links wrapped around buttons, and a footer with attribution.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring a warm automotive theme with brand yellow header color and WhatsApp green for CTAs, supporting both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom brand colors (brand-yellow, whatsapp), neutral palette, and design tokens for the tyre shop theme."
+}

@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Minimal Motoko actor with no methods.",
+  "feature_evidence.json": "Feature evidence report linking a WhatsApp CTA fix to frontend/src/App.tsx with high confidence.",
+  "frontend-file-summaries.txt": "Contains short summaries of key frontend files including App.tsx, index.css, and tailwind config.",
+  "frontend/index.css": "Tailwind base layer defining color variables, dark mode tokens, and global styles.",
+  "frontend/index.html": "Basic HTML shell mounting the React app via main.tsx.",
+  "frontend/src/App.tsx": "Main UI showing two tyre product cards with WhatsApp order links and a branded header and footer.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing a backend actor based on Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity auth context with login, logout, and identity persistence wiring.",
+  "frontend/src/index.css": "Theme definitions for brand colors, WhatsApp button styles, semantic tokens, and dark mode.",
+  "frontend/src/main.tsx": "React entry point mounting App with Internet Identity and React Query providers.",
+  "frontend/tailwind.config.js": "Tailwind setup extending theme with OKLCH colors, brand tokens, container settings, and plugins.",
+  "project_state.json": "Defines the project’s state, requirements, and issues for building a responsive landing page with product cards and correct WhatsApp links. Notes HTML quoting errors, needed UI fixes, and Tailwind-based styling requirements."
+}

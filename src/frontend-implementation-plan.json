@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix WhatsApp CTA link click reliability on landing page",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Ensure each product card “Order on WhatsApp” CTA is a reliable, direct anchor link to the existing WhatsApp deep links.",
+      "acceptanceCriteria": [
+        "On the landing page, clicking “Order on WhatsApp” for Bike Tyres navigates to https://wa.me/91XXXXXXXXXX (e.g., opens a new tab/window if target=_blank is used).",
+        "On the landing page, clicking “Order on WhatsApp” for Car Tyres navigates to https://wa.me/919242253234 (e.g., opens a new tab/window if target=_blank is used).",
+        "There is no broken or malformed href (no missing quotes, no stray characters) and the click is not prevented by the component structure/styling.",
+        "User-facing text remains in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the product card CTA so the clickable element is a direct <a> element with href set to the existing product.whatsappLink values (keep the Bike Tyres and Car Tyres URLs exactly as they are). Remove/avoid nested or overlaid structures that could intercept clicks (e.g., avoid relying on Button asChild for navigation if it is causing click prevention), and ensure the anchor occupies the full CTA area (block-level/w-full) and preserves the English label “Order on WhatsApp”. Continue composing with the existing shadcn-ui Card component for layout (do not modify frontend/src/components/ui/*). Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

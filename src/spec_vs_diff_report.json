@@ -1,0 +1,22 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-09T16:37:20.501Z",
+  "summary": "REQ-4 appears implemented: the WhatsApp CTA is now a real <a> element with href set to the existing deep links for Bike Tyres and Car Tyres, wrapping the Button so clicks should navigate reliably (opens in new tab via target=\"_blank\"). No evidence of edits under frontend/src/components/ui, and the page remains a single-page landing page.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Added/modified footer attribution link to caffeine.ai with UTM parameters derived from hostname (appIdentifier).",
+      "reason": "BuildRequest did not request adding or changing footer attribution/marketing links; it also explicitly lists analytics/tracking as non-goals, and UTM parameters can be considered tracking-related.",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/App.tsx",
+    "project_state.json"
+  ]
+}

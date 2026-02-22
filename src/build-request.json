@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Fix WhatsApp CTA link not opening on landing page",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Fix the product card “Order on WhatsApp” call-to-action so the WhatsApp link reliably opens when clicked. Ensure the clickable element is a real anchor (<a>) with the WhatsApp URL in its href (not a nested/overlaid element that can block navigation), and keep the existing WhatsApp deep links exactly as they are in the app (Bike Tyres: https://wa.me/91XXXXXXXXXX, Car Tyres: https://wa.me/919242253234).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Link is not able to open"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the landing page, clicking “Order on WhatsApp” for Bike Tyres navigates to https://wa.me/91XXXXXXXXXX (e.g., opens a new tab/window if target=_blank is used).",
+        "On the landing page, clicking “Order on WhatsApp” for Car Tyres navigates to https://wa.me/919242253234 (e.g., opens a new tab/window if target=_blank is used).",
+        "There is no broken or malformed href (no missing quotes, no stray characters) and the click is not prevented by the component structure/styling.",
+        "User-facing text remains in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the WhatsApp deep links from the values currently used in the app: Bike Tyres https://wa.me/91XXXXXXXXXX and Car Tyres https://wa.me/919242253234.",
+    "Do not edit files under frontend/src/components/ui (read-only); compose with them or adjust usage from editable components like frontend/src/App.tsx.",
+    "Keep the app as a single-page landing page; no new backend functionality is required."
+  ],
+  "nonGoals": [
+    "Adding Internet Identity authentication flows or backend features.",
+    "Adding analytics, tracking, or link-shortening services.",
+    "Changing the site’s visual theme beyond what is required to make the CTA link clickable."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

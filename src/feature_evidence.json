@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-fix-the-product-card-order-on-whatsapp-call-to-action-so-the-whatsapp-link-reliably-opens-when-clicked-ensure-the-clickable-element-is-a-real-anchor-a-with-the-whatsapp-url-in-its-href-not-a-nested-overlaid-element-that-can-block-navigation-and-keep-the-existing-whatsapp-deep-links-exactly-as-they-are-in-the-app-bike-tyres-https-wa-me-91xxxxxxxxxx-car-tyres-https-wa-me-919242253234",
+      "featureTitle": "Fix the product card “Order on WhatsApp” call-to-action so the WhatsApp link reliably opens when clicked. Ensure the clickable element is a real anchor (<a>) with the WhatsApp URL in its href (not a nested/overlaid element that can block navigation), and keep the existing WhatsApp deep links exactly as they are in the app (Bike Tyres: https://wa.me/91XXXXXXXXXX, Car Tyres: https://wa.me/919242253234).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
